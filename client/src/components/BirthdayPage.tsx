@@ -31,26 +31,28 @@ export default function BirthdayPage({ shouldAutoPlay = false }: BirthdayPagePro
       
       {/* Animated Background Elements */}
       <div className="absolute inset-0 pointer-events-none">
-        {/* Floating Hearts */}
-        <div className="absolute top-20 left-10 w-6 h-6 text-pink-400 opacity-60 floating" style={{animationDelay: '0s'}}>💖</div>
-        <div className="absolute top-40 right-20 w-8 h-8 text-red-400 opacity-50 floating" style={{animationDelay: '1s'}}>❤️</div>
-        <div className="absolute bottom-40 left-20 w-5 h-5 text-pink-500 opacity-70 floating" style={{animationDelay: '2s'}}>💕</div>
-        <div className="absolute bottom-20 right-40 w-7 h-7 text-red-500 opacity-60 floating" style={{animationDelay: '1.5s'}}>💗</div>
+        {/* Beautiful Girl Celebration Elements */}
+        <div className="absolute top-20 left-10 w-8 h-8 text-pink-400 opacity-70 floating" style={{animationDelay: '0s'}}>🧸</div>
+        <div className="absolute top-40 right-20 w-7 h-7 text-yellow-400 opacity-80 sparkle" style={{animationDelay: '1s'}}>👸</div>
+        <div className="absolute bottom-40 left-20 w-6 h-6 text-pink-500 opacity-70 floating" style={{animationDelay: '2s'}}>😊</div>
+        <div className="absolute bottom-20 right-40 w-8 h-8 text-purple-500 opacity-60 floating" style={{animationDelay: '1.5s'}}>🌺</div>
         
-        {/* Floating Stars */}
-        <div className="absolute top-32 left-1/4 w-4 h-4 text-yellow-400 opacity-80 sparkle" style={{animationDelay: '0.5s'}}>⭐</div>
+        {/* Angel & Beauty Elements */}
+        <div className="absolute top-32 left-1/4 w-7 h-7 text-white opacity-90 sparkle" style={{animationDelay: '0.5s'}}>😇</div>
         <div className="absolute top-1/3 right-1/3 w-6 h-6 text-yellow-500 opacity-70 sparkle" style={{animationDelay: '1.5s'}}>✨</div>
-        <div className="absolute bottom-1/4 left-1/3 w-5 h-5 text-yellow-600 opacity-60 sparkle" style={{animationDelay: '2s'}}>🌟</div>
+        <div className="absolute bottom-1/4 left-1/3 w-8 h-8 text-pink-400 opacity-60 floating" style={{animationDelay: '2s'}}>🌸</div>
         <div className="absolute bottom-1/3 right-1/4 w-7 h-7 text-yellow-400 opacity-50 sparkle" style={{animationDelay: '0.8s'}}>💫</div>
         
-        {/* Floating Balloons */}
-        <div className="absolute top-16 right-16 w-8 h-8 text-pink-500 opacity-70 floating" style={{animationDelay: '0.3s'}}>🎈</div>
-        <div className="absolute top-64 left-32 w-6 h-6 text-blue-500 opacity-60 floating" style={{animationDelay: '1.2s'}}>🎈</div>
-        <div className="absolute bottom-32 right-32 w-7 h-7 text-purple-500 opacity-80 floating" style={{animationDelay: '0.9s'}}>🎈</div>
+        {/* Smile & Joy Elements */}
+        <div className="absolute top-16 right-16 w-8 h-8 text-yellow-500 opacity-70 bounce" style={{animationDelay: '0.3s'}}>😍</div>
+        <div className="absolute top-64 left-32 w-6 h-6 text-pink-500 opacity-60 floating" style={{animationDelay: '1.2s'}}>🥰</div>
+        <div className="absolute bottom-32 right-32 w-7 h-7 text-purple-400 opacity-80 bounce" style={{animationDelay: '0.9s'}}>💝</div>
         
-        {/* Floating Gifts */}
-        <div className="absolute top-48 right-48 w-6 h-6 text-green-500 opacity-70 bounce" style={{animationDelay: '0.7s'}}>🎁</div>
-        <div className="absolute bottom-48 left-48 w-5 h-5 text-blue-600 opacity-60 bounce" style={{animationDelay: '1.3s'}}>🎁</div>
+        {/* Teddy Bears & Cute Elements */}
+        <div className="absolute top-48 right-48 w-8 h-8 text-brown-500 opacity-70 bounce" style={{animationDelay: '0.7s'}}>🧸</div>
+        <div className="absolute bottom-48 left-48 w-6 h-6 text-pink-600 opacity-60 floating" style={{animationDelay: '1.3s'}}>🎀</div>
+        <div className="absolute top-56 left-16 w-7 h-7 text-red-400 opacity-75 sparkle" style={{animationDelay: '1.8s'}}>💖</div>
+        <div className="absolute bottom-56 right-16 w-8 h-8 text-yellow-400 opacity-65 bounce" style={{animationDelay: '2.3s'}}>🌟</div>
         
         {/* Geometric Shapes */}
         <div className="absolute top-24 left-1/2 w-12 h-12 bg-pink-200 rounded-full opacity-30 pulse-glow" style={{animationDelay: '0.4s'}}></div>
