@@ -26,17 +26,54 @@ export default function BirthdayPage({ shouldAutoPlay = false }: BirthdayPagePro
   }, []);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-pink-50 via-purple-50 to-yellow-50">
+    <div className="min-h-screen bg-gradient-to-br from-pink-50 via-purple-50 to-yellow-50 relative overflow-hidden">
       <ConfettiAnimation />
+      
+      {/* Animated Background Elements */}
+      <div className="absolute inset-0 pointer-events-none">
+        {/* Floating Hearts */}
+        <div className="absolute top-20 left-10 w-6 h-6 text-pink-400 opacity-60 floating" style={{animationDelay: '0s'}}>💖</div>
+        <div className="absolute top-40 right-20 w-8 h-8 text-red-400 opacity-50 floating" style={{animationDelay: '1s'}}>❤️</div>
+        <div className="absolute bottom-40 left-20 w-5 h-5 text-pink-500 opacity-70 floating" style={{animationDelay: '2s'}}>💕</div>
+        <div className="absolute bottom-20 right-40 w-7 h-7 text-red-500 opacity-60 floating" style={{animationDelay: '1.5s'}}>💗</div>
+        
+        {/* Floating Stars */}
+        <div className="absolute top-32 left-1/4 w-4 h-4 text-yellow-400 opacity-80 sparkle" style={{animationDelay: '0.5s'}}>⭐</div>
+        <div className="absolute top-1/3 right-1/3 w-6 h-6 text-yellow-500 opacity-70 sparkle" style={{animationDelay: '1.5s'}}>✨</div>
+        <div className="absolute bottom-1/4 left-1/3 w-5 h-5 text-yellow-600 opacity-60 sparkle" style={{animationDelay: '2s'}}>🌟</div>
+        <div className="absolute bottom-1/3 right-1/4 w-7 h-7 text-yellow-400 opacity-50 sparkle" style={{animationDelay: '0.8s'}}>💫</div>
+        
+        {/* Floating Balloons */}
+        <div className="absolute top-16 right-16 w-8 h-8 text-pink-500 opacity-70 floating" style={{animationDelay: '0.3s'}}>🎈</div>
+        <div className="absolute top-64 left-32 w-6 h-6 text-blue-500 opacity-60 floating" style={{animationDelay: '1.2s'}}>🎈</div>
+        <div className="absolute bottom-32 right-32 w-7 h-7 text-purple-500 opacity-80 floating" style={{animationDelay: '0.9s'}}>🎈</div>
+        
+        {/* Floating Gifts */}
+        <div className="absolute top-48 right-48 w-6 h-6 text-green-500 opacity-70 bounce" style={{animationDelay: '0.7s'}}>🎁</div>
+        <div className="absolute bottom-48 left-48 w-5 h-5 text-blue-600 opacity-60 bounce" style={{animationDelay: '1.3s'}}>🎁</div>
+        
+        {/* Geometric Shapes */}
+        <div className="absolute top-24 left-1/2 w-12 h-12 bg-pink-200 rounded-full opacity-30 pulse-glow" style={{animationDelay: '0.4s'}}></div>
+        <div className="absolute top-1/2 right-12 w-16 h-16 bg-purple-200 rounded-full opacity-25 pulse-glow" style={{animationDelay: '1.6s'}}></div>
+        <div className="absolute bottom-24 left-1/4 w-10 h-10 bg-yellow-200 rounded-full opacity-40 pulse-glow" style={{animationDelay: '2.2s'}}></div>
+        
+        {/* Animated Triangles */}
+        <div className="absolute top-36 right-24 w-8 h-8 bg-gradient-to-r from-pink-300 to-purple-300 opacity-50 floating triangle" style={{animationDelay: '0.6s'}}></div>
+        <div className="absolute bottom-36 left-24 w-6 h-6 bg-gradient-to-r from-yellow-300 to-orange-300 opacity-60 floating triangle" style={{animationDelay: '1.4s'}}></div>
+      </div>
+      
+      {/* Hidden Music Controls - Auto-play only */}
+      <div className="hidden">
+        <MusicControls autoPlay={shouldAutoPlay} />
+      </div>
       
       {/* Header */}
       <header className="relative z-40 p-6">
-        <div className="max-w-6xl mx-auto flex justify-between items-center">
+        <div className="max-w-6xl mx-auto flex justify-center items-center">
           <div className="flex items-center space-x-2">
             <Cake className="text-pink-500 w-8 h-8 bounce" />
             <span className="font-bold text-xl text-gray-800">Birthday Celebration</span>
           </div>
-          <MusicControls autoPlay={shouldAutoPlay} />
         </div>
       </header>
 
