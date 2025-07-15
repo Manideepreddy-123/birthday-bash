@@ -8,8 +8,10 @@ import BirthdayPage from "@/components/BirthdayPage";
 
 function App() {
   const [showCelebration, setShowCelebration] = useState(false);
+  const [shouldAutoPlay, setShouldAutoPlay] = useState(false);
 
   const handleCelebrate = () => {
+    setShouldAutoPlay(true);
     setShowCelebration(true);
   };
 
@@ -20,7 +22,7 @@ function App() {
         {!showCelebration ? (
           <LandingPage onCelebrate={handleCelebrate} />
         ) : (
-          <BirthdayPage />
+          <BirthdayPage shouldAutoPlay={shouldAutoPlay} />
         )}
       </TooltipProvider>
     </QueryClientProvider>

@@ -4,7 +4,11 @@ import PhotoSlideshow from "./PhotoSlideshow";
 import MusicControls from "./MusicControls";
 import ConfettiAnimation from "./ConfettiAnimation";
 
-export default function BirthdayPage() {
+interface BirthdayPageProps {
+  shouldAutoPlay?: boolean;
+}
+
+export default function BirthdayPage({ shouldAutoPlay = false }: BirthdayPageProps) {
   useEffect(() => {
     // Set page title
     document.title = "🎉 Happy Birthday! 🎂";
@@ -32,7 +36,7 @@ export default function BirthdayPage() {
             <Cake className="text-pink-500 w-8 h-8 bounce" />
             <span className="font-bold text-xl text-gray-800">Birthday Celebration</span>
           </div>
-          <MusicControls autoPlay={true} />
+          <MusicControls autoPlay={shouldAutoPlay} />
         </div>
       </header>
 
