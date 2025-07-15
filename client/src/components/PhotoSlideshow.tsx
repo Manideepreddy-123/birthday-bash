@@ -25,7 +25,7 @@ export default function PhotoSlideshow() {
       const interval = setInterval(nextSlide, 4000);
       return () => clearInterval(interval);
     }
-  }, [photos.length]);
+  }, [photos.length, nextSlide]);
 
   if (photos.length === 0) {
     return (

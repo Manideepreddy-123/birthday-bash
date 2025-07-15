@@ -4,7 +4,11 @@ import { Button } from "@/components/ui/button";
 import { Slider } from "@/components/ui/slider";
 import birthdayMusic from "@assets/Inthandham song-[AudioTrimmer.com]_1752540681863.mp3";
 
-export default function MusicControls() {
+interface MusicControlsProps {
+  autoPlay?: boolean;
+}
+
+export default function MusicControls({ autoPlay = false }: MusicControlsProps) {
   const [isPlaying, setIsPlaying] = useState(false);
   const [volume, setVolume] = useState([50]);
   const audioRef = useRef<HTMLAudioElement>(null);
@@ -18,13 +22,29 @@ export default function MusicControls() {
     
     audioRef.current = audio;
 
+    // Auto-play if requested
+    if (autoPlay) {
+      const playAudio = async () => {
+        try {
+          await audio.play();
+          setIsPlaying(true);
+        } catch (error) {
+          console.log('Auto-play failed:', error);
+          // Auto-play failed, user will need to manually start
+        }
+      };
+      
+      // Small delay to ensure component is mounted
+      setTimeout(playAudio, 1000);
+    }
+
     return () => {
       if (audioRef.current) {
         audioRef.current.pause();
         audioRef.current = null;
       }
     };
-  }, []);
+  }, [autoPlay]);
 
   useEffect(() => {
     if (audioRef.current) {

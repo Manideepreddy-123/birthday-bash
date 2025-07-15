@@ -32,7 +32,7 @@ export default function BirthdayPage() {
             <Cake className="text-pink-500 w-8 h-8 bounce" />
             <span className="font-bold text-xl text-gray-800">Birthday Celebration</span>
           </div>
-          <MusicControls />
+          <MusicControls autoPlay={true} />
         </div>
       </header>
 
