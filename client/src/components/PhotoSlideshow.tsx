@@ -47,7 +47,7 @@ export default function PhotoSlideshow() {
 
   useEffect(() => {
     if (photos.length > 0) {
-      const interval = setInterval(nextSlide, 4000);
+      const interval = setInterval(nextSlide, 2500);
       return () => clearInterval(interval);
     }
   }, [photos.length, nextSlide]);
