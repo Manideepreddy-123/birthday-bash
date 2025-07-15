@@ -95,7 +95,7 @@ export default function PhotoSlideshow() {
         <div className="absolute bottom-20 -right-16 w-6 h-6 text-purple-400 opacity-80 bounce" style={{animationDelay: '1.4s'}}>🦋</div>
       </div>
       
-      <div className="photo-container aspect-[9/16] bg-white rounded-3xl overflow-hidden pulse-glow">
+      <div className="photo-container aspect-[9/16] bg-white rounded-3xl overflow-hidden shadow-2xl">
         <div className="slideshow-wrapper relative w-full h-full">
           {photos.map((photo, index) => (
             <div
