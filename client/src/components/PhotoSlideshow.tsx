@@ -58,7 +58,7 @@ export default function PhotoSlideshow() {
 
   return (
     <div className="relative max-w-4xl mx-auto mb-12">
-      <div className="photo-container aspect-[4/3] bg-white rounded-3xl overflow-hidden pulse-glow">
+      <div className="photo-container aspect-[9/16] bg-white rounded-3xl overflow-hidden pulse-glow">
         <div className="slideshow-wrapper relative w-full h-full">
           {photos.map((photo, index) => (
             <div
