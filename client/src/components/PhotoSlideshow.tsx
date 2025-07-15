@@ -68,6 +68,33 @@ export default function PhotoSlideshow() {
 
   return (
     <div className="relative max-w-2xl mx-auto mb-12">
+      {/* Beautiful Girl Background Emojis */}
+      <div className="absolute inset-0 pointer-events-none">
+        {/* Angels and Beauty */}
+        <div className="absolute -top-8 -left-8 w-8 h-8 text-white opacity-80 sparkle" style={{animationDelay: '0s'}}>😇</div>
+        <div className="absolute -top-6 -right-6 w-6 h-6 text-pink-400 opacity-70 floating" style={{animationDelay: '1s'}}>👸</div>
+        <div className="absolute top-1/4 -left-12 w-7 h-7 text-yellow-400 opacity-60 sparkle" style={{animationDelay: '2s'}}>✨</div>
+        <div className="absolute top-1/3 -right-10 w-8 h-8 text-pink-500 opacity-70 floating" style={{animationDelay: '1.5s'}}>🌸</div>
+        
+        {/* Loving and Admiring */}
+        <div className="absolute top-1/2 -left-10 w-7 h-7 text-red-400 opacity-80 bounce" style={{animationDelay: '0.5s'}}>😍</div>
+        <div className="absolute top-1/2 -right-8 w-6 h-6 text-pink-400 opacity-70 floating" style={{animationDelay: '1.8s'}}>🥰</div>
+        <div className="absolute bottom-1/3 -left-8 w-8 h-8 text-purple-400 opacity-60 sparkle" style={{animationDelay: '2.2s'}}>🌺</div>
+        <div className="absolute bottom-1/4 -right-12 w-7 h-7 text-yellow-500 opacity-80 bounce" style={{animationDelay: '0.8s'}}>🌟</div>
+        
+        {/* Cute and Lovely */}
+        <div className="absolute -bottom-6 -left-6 w-8 h-8 text-brown-400 opacity-70 bounce" style={{animationDelay: '1.2s'}}>🧸</div>
+        <div className="absolute -bottom-8 -right-8 w-6 h-6 text-pink-600 opacity-80 floating" style={{animationDelay: '0.3s'}}>🎀</div>
+        <div className="absolute bottom-1/2 -left-14 w-7 h-7 text-red-500 opacity-70 sparkle" style={{animationDelay: '1.6s'}}>💖</div>
+        <div className="absolute bottom-1/2 -right-14 w-8 h-8 text-purple-500 opacity-60 floating" style={{animationDelay: '2.4s'}}>💝</div>
+        
+        {/* Smile and Joy */}
+        <div className="absolute top-16 -left-16 w-6 h-6 text-yellow-400 opacity-80 bounce" style={{animationDelay: '0.7s'}}>😊</div>
+        <div className="absolute top-20 -right-16 w-7 h-7 text-pink-400 opacity-70 sparkle" style={{animationDelay: '1.9s'}}>💕</div>
+        <div className="absolute bottom-16 -left-16 w-8 h-8 text-yellow-500 opacity-60 floating" style={{animationDelay: '2.6s'}}>🌞</div>
+        <div className="absolute bottom-20 -right-16 w-6 h-6 text-purple-400 opacity-80 bounce" style={{animationDelay: '1.4s'}}>🦋</div>
+      </div>
+      
       <div className="photo-container aspect-[9/16] bg-white rounded-3xl overflow-hidden pulse-glow">
         <div className="slideshow-wrapper relative w-full h-full">
           {photos.map((photo, index) => (
