@@ -92,7 +92,7 @@ export default function BirthdayPage({ shouldAutoPlay = false }: BirthdayPagePro
         <div className="text-center z-10">
           <div className="fade-in">
             <h1 className="font-bold text-6xl md:text-8xl gradient-text mb-6">
-              🎉 Happy Birthday! 🎂
+              🎉 Happy Birthday! Maa🎂
             </h1>
             <p className="text-2xl md:text-3xl text-gray-700 mb-8 font-medium">
               Celebrating another amazing year of life!
@@ -133,19 +133,19 @@ export default function BirthdayPage({ shouldAutoPlay = false }: BirthdayPagePro
           <div className="space-y-8">
             <div className="fade-in bg-white/60 backdrop-blur-sm rounded-3xl p-8 shadow-xl">
               <p className="text-xl md:text-2xl text-gray-800 font-medium leading-relaxed">
-                "May your birthday be filled with sunshine, smiles, laughter, love, and all the wonderful things that make you happy! 🌟"
+                "Many more happy returns of the day maa❤️hope ee year chala wonderful ga undali ani 😃"
               </p>
             </div>
             
             <div className="fade-in bg-white/60 backdrop-blur-sm rounded-3xl p-8 shadow-xl" style={{animationDelay: '0.3s'}}>
               <p className="text-xl md:text-2xl text-gray-800 font-medium leading-relaxed">
-                "Another year of incredible memories, beautiful moments, and amazing adventures. Here's to many more! 🎊"
+                "Eppudu happy ga undu naku telusu nuv anukunna goal reach avuthavani keep going"
               </p>
             </div>
             
             <div className="fade-in bg-white/60 backdrop-blur-sm rounded-3xl p-8 shadow-xl" style={{animationDelay: '0.6s'}}>
               <p className="text-xl md:text-2xl text-gray-800 font-medium leading-relaxed">
-                "Wishing you a day filled with love, laughter, and all your favorite things. Happy Birthday! 🎂✨"
+                "Nuv epudaina edanna share chesukovali anna nenu epudu untanu ani marachipoku"
               </p>
             </div>
           </div>

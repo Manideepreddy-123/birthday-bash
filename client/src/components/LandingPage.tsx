@@ -39,7 +39,7 @@ export default function LandingPage({ onCelebrate }: LandingPageProps) {
       <div className={`text-center z-10 transition-all duration-800 ${isAnimating ? 'scale-110 opacity-0' : 'scale-100 opacity-100'}`}>
         <div className="fade-in">
           <h1 className="font-bold text-7xl md:text-9xl gradient-text mb-8">
-            🎉 Happy Birthday! 🎂
+            🎉 Happy Birthday! Maa🎂
           </h1>
           <p className="text-2xl md:text-3xl text-gray-700 mb-12 font-medium">
             Someone special is celebrating today!
