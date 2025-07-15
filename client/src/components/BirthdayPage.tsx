@@ -109,29 +109,7 @@ export default function BirthdayPage() {
         </div>
       </section>
 
-      {/* Decorative Elements Section */}
-      <section className="py-20 px-6">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="photo-container aspect-square">
-              <img src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=400" 
-                   alt="Birthday balloons and confetti" className="w-full h-full object-cover" />
-            </div>
-            <div className="photo-container aspect-square">
-              <img src="https://images.unsplash.com/photo-1464349153735-7db50ed83c84?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=400" 
-                   alt="Birthday cake with candles" className="w-full h-full object-cover" />
-            </div>
-            <div className="photo-container aspect-square">
-              <img src="https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=400" 
-                   alt="Party decorations and streamers" className="w-full h-full object-cover" />
-            </div>
-            <div className="photo-container aspect-square">
-              <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=400" 
-                   alt="Colorful party background" className="w-full h-full object-cover" />
-            </div>
-          </div>
-        </div>
-      </section>
+
 
       {/* Footer */}
       <footer className="py-12 px-6 bg-gray-900 text-white">

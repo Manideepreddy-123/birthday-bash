@@ -74,18 +74,7 @@ export default function ConfettiAnimation() {
         />
       ))}
       
-      <style jsx>{`
-        @keyframes confetti {
-          0% {
-            transform: translateY(-100vh) rotate(0deg);
-            opacity: 1;
-          }
-          100% {
-            transform: translateY(100vh) rotate(360deg);
-            opacity: 0;
-          }
-        }
-      `}</style>
+
     </div>
   );
 }

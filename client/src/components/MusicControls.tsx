@@ -2,6 +2,7 @@ import { useState, useRef, useEffect } from "react";
 import { Play, Pause, Volume2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Slider } from "@/components/ui/slider";
+import birthdayMusic from "@assets/Inthandham song-[AudioTrimmer.com]_1752540681863.mp3";
 
 export default function MusicControls() {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -13,10 +14,7 @@ export default function MusicControls() {
     const audio = new Audio();
     audio.loop = true;
     audio.volume = volume[0] / 100;
-    
-    // Note: In a real implementation, you would add actual birthday music files
-    // For demo purposes, we'll use a placeholder audio URL
-    audio.src = "https://www.soundjay.com/misc/sounds/bell-ringing-05.wav";
+    audio.src = birthdayMusic;
     
     audioRef.current = audio;
 

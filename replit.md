@@ -8,6 +8,15 @@ This is a full-stack web application built to create a beautiful birthday celebr
 
 Preferred communication style: Simple, everyday language.
 
+## Recent Changes
+
+**July 15, 2025**
+- Restructured app from single-page to two-page birthday celebration
+- Added landing page with "Let's Celebrate!" button
+- Integrated all 15 personal photos into slideshow
+- Added background music MP3 file support
+- Enhanced animations and removed deprecated JSX styling
+
 ## System Architecture
 
 ### Frontend Architecture
