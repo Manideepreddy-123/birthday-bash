@@ -30,10 +30,10 @@ export default function LandingPage({ onCelebrate }: LandingPageProps) {
 
       {/* Sparkle effects */}
       <div className="absolute inset-0">
-        <Sparkles className="absolute top-1/4 left-1/4 text-pink-400 w-6 h-6 floating opacity-60" style={{animationDelay: '0.5s'}} />
-        <Sparkles className="absolute top-1/3 right-1/3 text-yellow-400 w-8 h-8 floating opacity-50" style={{animationDelay: '1.5s'}} />
-        <Sparkles className="absolute bottom-1/4 left-1/3 text-purple-400 w-5 h-5 floating opacity-70" style={{animationDelay: '2s'}} />
-        <Sparkles className="absolute bottom-1/3 right-1/4 text-orange-400 w-7 h-7 floating opacity-40" style={{animationDelay: '0.8s'}} />
+        <Sparkles className="absolute top-1/4 left-1/4 text-pink-400 w-6 h-6 sparkle opacity-60" style={{animationDelay: '0.5s'}} />
+        <Sparkles className="absolute top-1/3 right-1/3 text-yellow-400 w-8 h-8 sparkle opacity-50" style={{animationDelay: '1.5s'}} />
+        <Sparkles className="absolute bottom-1/4 left-1/3 text-purple-400 w-5 h-5 sparkle opacity-70" style={{animationDelay: '2s'}} />
+        <Sparkles className="absolute bottom-1/3 right-1/4 text-orange-400 w-7 h-7 sparkle opacity-40" style={{animationDelay: '0.8s'}} />
       </div>
 
       <div className={`text-center z-10 transition-all duration-800 ${isAnimating ? 'scale-110 opacity-0' : 'scale-100 opacity-100'}`}>
@@ -55,7 +55,7 @@ export default function LandingPage({ onCelebrate }: LandingPageProps) {
           <Button
             onClick={handleCelebrate}
             size="lg"
-            className="text-2xl px-12 py-6 bg-gradient-to-r from-pink-500 via-purple-500 to-yellow-500 hover:from-pink-600 hover:via-purple-600 hover:to-yellow-600 text-white rounded-full shadow-2xl pulse-glow transform hover:scale-105 transition-all duration-300"
+            className="text-2xl px-12 py-6 bg-gradient-to-r from-pink-500 via-purple-500 to-yellow-500 hover:from-pink-600 hover:via-purple-600 hover:to-yellow-600 text-white rounded-full shadow-2xl pulse-glow transform hover:scale-105 transition-all duration-300 animate-pulse"
             disabled={isAnimating}
           >
             <Sparkles className="w-8 h-8 mr-3" />

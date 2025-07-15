@@ -113,6 +113,11 @@
   50% { box-shadow: 0 0 40px rgba(255, 107, 157, 0.8); }
 }
 
+@keyframes sparkle {
+  0%, 100% { opacity: 0.4; transform: scale(0.8); }
+  50% { opacity: 1; transform: scale(1.2); }
+}
+
 @keyframes slideIn {
   from { transform: translateX(-100%); opacity: 0; }
   to { transform: translateX(0); opacity: 1; }
@@ -153,6 +158,10 @@
 
 .bounce { 
   animation: bounce 1s infinite; 
+}
+
+.sparkle { 
+  animation: sparkle 2s infinite; 
 }
 
 .confetti-piece {
